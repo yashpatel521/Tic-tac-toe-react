@@ -1,0 +1,57 @@
+.magic-square-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.magic-square-input {
+  padding: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.magic-square-button {
+  padding: 8px 20px;
+  font-size: 16px;
+  background-color: #2c3e50; /* Dark blue background */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.magic-square-button:hover {
+  background-color: #1a2530; /* Darker blue on hover */
+}
+
+.magic-square-table {
+  margin-top: 20px;
+  border-collapse: separate; /* Separate borders */
+  border-spacing: 5px; /* Space between cells */
+  width: 100%;
+  background-color: transparent; /* Black background */
+}
+
+.magic-square-table th,
+.magic-square-table td {
+  padding: 12px;
+  text-align: center;
+  transition: background-color 0.3s ease; /* Smooth transition */
+  border: 1px solid #222; /* Darker grey border */
+}
+
+.magic-square-table th {
+  background-color: #111; /* Darker grey for headers */
+  color: white;
+}
+
+.magic-square-table td {
+  background-color: #333; /* Dark grey background */
+}
+
+.magic-square-table td:hover {
+  background-color: #222; /* Darker grey on cell hover */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Box shadow on hover */
+}

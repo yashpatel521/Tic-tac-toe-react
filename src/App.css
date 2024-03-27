@@ -40,33 +40,3 @@
 .read-the-docs {
   color: #888;
 }
-table {
-  /* border: 1px solid white; */
-  margin: 5px auto;
-}
-
-.vert {
-  border-left: 2px solid white;
-  border-right: 2px solid white;
-}
-.hori {
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-}
-tr,
-td {
-  /* border: 1px solid white; */
-  width: 150px;
-  height: 140px;
-}
-
-table button {
-  font-size: 48px;
-  width: 150px;
-  height: 140px;
-}
-
-button:disabled,
-button[disabled] {
-  color: white;
-}
