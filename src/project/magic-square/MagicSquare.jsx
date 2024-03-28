@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import "./MagicSquare.css"; // Import the CSS file
+import Table from "./Table";
 
 function MagicSquare() {
   const [size, setSize] = useState(0);
   const [magicSquare, setMagicSquare] = useState([]);
-
-  function handleSizeChange(event) {
-    setSize(parseInt(event.target.value));
-  }
 
   function createMagicSquare() {
     if (size > 0) {
@@ -53,27 +50,23 @@ function MagicSquare() {
 
   return (
     <div className="magic-square-container">
+      <p>
+        A magic square is a grid of numbers where the sum of each row, column,
+        and diagonal is the same. It's a fascinating mathematical construct with
+        a rich history and various types, each with its own unique properties
+        and symmetries.
+      </p>
       <input
         type="number"
         className="magic-square-input"
         placeholder="Enter a number"
         value={size}
-        onChange={handleSizeChange}
+        onChange={(e) => setSize(parseInt(event.target.value))}
       />
       <button className="magic-square-button" onClick={createMagicSquare}>
         Create Magic Square
       </button>
-      <table className="magic-square-table">
-        <tbody>
-          {magicSquare.map((row, i) => (
-            <tr key={i}>
-              {row.map((cell, j) => (
-                <td key={j}>{cell}</td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <Table magicSquare={magicSquare} />
     </div>
   );
 }

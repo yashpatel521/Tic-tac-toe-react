@@ -11,8 +11,8 @@ const index = ({ projectLinks }) => {
           paddingBottom: "10px",
         }}
       >
-        {projectLinks.map((link) => (
-          <Link to={link.path}>
+        {projectLinks.map((link, index) => (
+          <Link to={link.path} key={index}>
             <Button name={link.text} />
           </Link>
         ))}

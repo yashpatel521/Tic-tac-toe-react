@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Index from "./project/Index";
 import TicTacToe from "./project/tic-tac-toe/TicTacToe";
-import MagicSquare from "./project/magicSquare/MagicSquare";
+import MagicSquare from "./project/magic-square/MagicSquare";
 
 function App() {
   const projectLinks = [
